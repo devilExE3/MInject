@@ -1,3 +1,5 @@
+## Why use forked version?
+This version is somewhat compatible with the Mono 2.0 (mono-2.0-bdwgc.dll) engine.
 # MInject
 Mono Framework Interaction / Injection Library for .NET (C++/CLI)
 
