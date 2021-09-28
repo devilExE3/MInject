@@ -16,7 +16,7 @@ namespace MInjectNative
 	MonoProcess::MonoProcess(DWORD p_ProcessId)
 	{
 		m_InnerProcess.Attach(p_ProcessId);
-		m_MonoModule = m_InnerProcess.modules().GetModule(L"mono.dll");
+		m_MonoModule = m_InnerProcess.modules().GetModule(L"mono-2.0-bdwgc.dll");
 
 		m_InnerProcess.remote().CreateRPCEnvironment(blackbone::Worker_CreateNew);
 		m_WorkerThread = m_InnerProcess.remote().getWorker();
